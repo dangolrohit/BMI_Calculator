@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BMI Calculator</title>
 </head>
 <body>
@@ -11,19 +12,29 @@
         <div class="text">
             <h1>BMI Calculator </h1>
             <p>This is a BMI calculator made by using HTML, CSS, and JavaScript.</p>
-            <p>You can calculate your BMI using your body height and weight.</p>
+            <p>You can calculate your BMI using your body weight and height.</p>
+            <a href="https://www.facebook.com/officialrohitdangol" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/dangolroheet/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/DangolRoheet" class="fa fa-twitter"></a>
+            <a href="https://dribbble.com/rohitdangol" class="fa fa-dribbble"></a>
+            <a href="https://github.com/dangolrohit" class="fa fa-github"></a>
         </div>
-        <div class="bmiCalc">
-            <form class="bmiForm">
-                <div class="display">
-                    <input type="text" name="display">
-                </div>
-                <input type="text" placeholder="Weight in Kg">
-                <input type="text" placeholder="Height. (eg. feet.inch)">
-                <input type="button" class="submit" value="Calculate">
-                
+        <div class="calculator">
+            <form>
+                <input type="text" name="display" id="display">               
+                <input type="number" id="weight" placeholder="Enter weight (Kg)" required>                
+                <input type="number" id="height" placeholder="Enter height (Ft.Inch)" required>
+                <input type="button" value="Calculate BMI" class="btn" id="btn" onclick="calculateBMI()">               
             </form>
         </div>
     </section>
+    <section class="footer">
+        <h4><a href="https://rohitdangol.com.np/">Rohit Dangol</a></h4>
+    </section>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
+
+
