@@ -23,14 +23,15 @@
     width: 10rem;
     height: 2rem;
     padding: 0rem 0.5rem;
-    color: white;
+    color: rgb(0, 0, 0);
     border: 0;
     border-radius: 10px;
 }
 #display{
     background: transparent;
     border: 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    color: white;
 }
 
 form{
